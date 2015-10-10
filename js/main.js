@@ -585,7 +585,6 @@ function getNodes() {
 	$
 			.ajax({
 				type : "GET",
-				timeout : 3000,
 				url : "http://app-hannover.de/services/hannover/sync_hash/"
 						+ window.localStorage.getItem("lang"),
 				dataType : "json",
