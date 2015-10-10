@@ -1408,8 +1408,7 @@ function renderPageTypeOne(item, stype, parentid) {
 																							.attr(
 																									'href')),
 																					'_blank',
-																					'location=yes',
-																					'closebuttoncaption=X');
+																					'location=no,zoom=no');
 																	ref.show();
 																});
 
@@ -1606,8 +1605,7 @@ function renderPageTypeOne(item, stype, parentid) {
 																							.attr(
 																									'href')),
 																					'_blank',
-																					'location=yes',
-																					'closebuttoncaption=X');
+																					'location=no,zoom=no');
 																	ref.show();
 																});
 												/*
@@ -1895,8 +1893,7 @@ function renderMap(item, stype) {
 						function(event) {
 							event.preventDefault();
 							var ref = window.open(encodeURI($(this)
-									.attr('href')), '_blank', 'location=yes',
-									'closebuttoncaption=X');
+									.attr('href')), '_blank', 'location=no,zoom=no');
 							ref.show();
 						});
 				break;
@@ -1971,8 +1968,7 @@ function renderMap(item, stype) {
 																					.attr(
 																							'href')),
 																			'_blank',
-																			'location=yes',
-																			'closebuttoncaption=X');
+																			'location=no,zoom=no');
 															ref.show();
 														});
 										break;
@@ -2029,7 +2025,7 @@ function renderMap(item, stype) {
 			function(event) {
 				event.preventDefault();
 				var ref = window.open(encodeURI($(this).attr('href')),
-						'_blank', 'location=yes', 'closebuttoncaption=X');
+						'_blank', 'location=no,zoom=no');
 				ref.show();
 			});
 
@@ -2251,7 +2247,7 @@ function renderPageTypeVeranstaltung(item, stype) {
 	$("ul#submenu li a").click(
 					function(event) {
 									var ref = window.open(encodeURI($(this).attr('data-url')),
-						'_blank', 'location=yes', 'closebuttoncaption=X');
+						'_blank', 'location=no,zoom=no');
 				ref.show();	
 					});
 	}
@@ -2419,7 +2415,7 @@ function renderPageTypeHotel(item, stype) {
 																							.attr(
 																									'href')),
 																					'_blank',
-																					'location=yes',
+																					'location=no,zoom=no',
 																					'closebuttoncaption=X');
 																	ref.show();
 																});
@@ -2586,7 +2582,7 @@ function renderPageTypeHotelDetail(item, stype) {
 			function(event) {
 				event.preventDefault();
 				var ref = window.open(encodeURI($(this).attr('href')),
-						'_blank', 'location=yes', 'closebuttoncaption=X');
+						'_blank', 'location=no,zoom=no');
 				ref.show();
 			});
 }
@@ -2734,6 +2730,9 @@ function start() {
 function onDeviceReady() {
 	document.addEventListener("backbutton", onBackKeyDown, false);
 	phonegap = true;
+	if (DEBUG != true) {
+	 window.open = cordova.InAppBrowser.open;
+	}
 	start();
 }
 function alertDismissed() {
