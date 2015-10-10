@@ -2248,7 +2248,6 @@ function renderPageTypeVeranstaltung(item, stype) {
 					function(event) {
 									var ref = window.open(encodeURI($(this).attr('data-url')),
 						'_blank', 'location=yes,zoom=no,closebuttoncaption=X');
-						ref.insertCSS({file: "../css/hannover.css"});
 				ref.show();	
 					});
 	}
