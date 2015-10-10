@@ -6,6 +6,7 @@ var $nodesneedtoupdate = true;
 var menurendered = false;
 var phonegap = true;
 var db = false;
+$.support.cors=true;
 Date.prototype.toDateInputValue = (function() {
 	var local = new Date(this);
 	local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
