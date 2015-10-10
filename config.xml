@@ -7,7 +7,7 @@
 		<name>HannoverApp</name>
 		<description>HannoverApp</description>
 		<author href="https://www.applikationswerk.de" email="info@applikationswerk.de">Applikationswerk GmbH</author>
-		<preference name="phonegap-version" value="cli-5.2.0" />
+		preference name="phonegap-version" value="3.6.3" />
 		<preference name="BackupWebStorage" value="none" />
 		<preference name="orientation" value="portrait" />
 		<preference name="target-device" value="universal" />

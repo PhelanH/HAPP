@@ -692,7 +692,7 @@ function getNodes() {
 				},
 				error : function() {
 					if (window.localStorage.getItem("firststart") == 'true') {
-						if (DEBUG != true) {
+					if (DEBUG != true) {
 					navigator.notification.alert(
 						'We are Sorry, but we couldn\'t establish a connection to our server...',
 						alertDismissed,
