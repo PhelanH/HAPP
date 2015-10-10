@@ -27,7 +27,7 @@
 		<gap:plugin name="org.apache.cordova.globalization" />
 		<gap:plugin name="com.phonegap.plugin.statusbar" />
 		<gap:plugin name="org.apache.cordova.geolocation" />	
-		<gap:plugin name="com.cordova.plugin.inappbrowser.with.loading.spinner" version="1.0.13" />
+		<gap:plugin name="com.initialxy.cordova.themeablebrowser" source="npm"  />
 		<gap:plugin name="org.apache.cordova.device" />		
 		<gap:plugin name="org.apache.cordova.dialogs"/>
 		<gap:plugin name="org.apache.cordova.splashscreen"/>
