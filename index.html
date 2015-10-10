@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="js/jquery-1.10.1.min.js"></script>	
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/leaflet.js"></script>
+		<script src="js/jquery.simpleWeather.js"></script>
+		<script src="js/jquery.fastLiveFilter.js"></script>
+		<script src="js/lazyload.min.js"></script>
+		<script src="js/fastclick.js"></script>
+		<script type="text/javascript" src="phonegap.js"></script>
+		<!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+		<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="css/weather-icons.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body id="homepage" class="start">
+		<div class="navbar navbar-default navbar-fixed-top" id="navbar" style="display:none">
+		<button type="button" id="navbutton" class="navbar-toggle" data-toggle="offcanvas" data-target="#myNavmenu" style="display:none;position: absolute;z-index: 10;padding: 9px 25% 9px 10px;">
+    			<span class="icon-bar"></span>
+    			<span class="icon-bar"></span>
+    			<span class="icon-bar"></span>
+  		</button><div id="wetter" style="float:left;width:8em;position:absolute;top:2px;left:5px;font-size:0.8em;line-height:45px;height:45px;"></div>
+		<div id="pagetitle" style="position: absolute;height: 45px;line-height: 45px;text-align: center;z-index: 8;width: 66%;left: 17%;overflow: hidden;text-overflow: ellipsis;;"></div>
+			<p id="gotostart" style="float: right;margin-top: 0px;margin-bottom:0px;display: inline-block;margin-right: 5px;line-height:22px;font-size:22px;width:50%;text-align: right;">
+				<i style="display: block;margin: 10px;color: darkgrey;position: absolute;z-index: 11;padding: 0px 10px 0px 25%;margin: 0px;height: 45px;line-height: 45px;right: 0;" id="backbtn" class="fa fa-chevron-left"></i>
+				<i style="display: block;margin: 10px;color: darkgrey;position: absolute;z-index: 12;padding: 0px 10px 0px 25%;margin: 0px;height: 45px;line-height: 45px;right: 0;" id="searchbtn" class="fa fa-search"></i>
+			</p>
+		</div>
+		<div class="container">
+			<div class="main-menu" id="main-menu">
+				<div class="menu-list-head" id="menu-list-head" style="display:none;height:130px;background-image: url('img/head/1.jpg');background-size: cover;position:relative;background-position: center;">
+				<img style="height:65px;margin-left:10px;margin-top:10px" src="img/hannover_logo.png">
+				
+				</div>
+				<div class="main-menu-list" id="main-menu-list">
+					<ul class="nav navmenu-nav" id="navmenunav"></ul>
+				</div>
+			</div>
+			<div class="main-content" id="main-content"></div>
+			<div class="" id="logo" style="position: absolute;width: 100%;top: 0px;padding-top: 20px;padding-left: 20px;"><img id="hlogo" style="float:left;width: 25%;" src="img/hannover_logo.png"></div>
+		</div>
+		<div id="loaderdata">
+		<div style="margin:0 auto;width: 280px;display: block;">
+		<div class="zone_wrap">
+			<div class="buehne_bg">
+				<div class="buehne">
+				<center>
+				<h4 style="color:white">HERZLICH WILLKOMMEN</h4>
+				<i class="fa fa-circle-o-notch fa-spin"></i> Lade Daten
+				<br/>
+				<div id="loadingstatus" style="display:none"></div>
+				</center>
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+		<div style="-webkit-transform: translateZ(0)"></div>
+		<script src="js/main.js"></script>
+	</body>
+</html>
