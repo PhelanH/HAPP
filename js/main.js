@@ -2195,7 +2195,8 @@ function renderPageTypeVeranstaltung(item, stype) {
 	var networkState = navigator.connection.type;
 	if (networkState != 'Connection.NONE') {
 	var page = '';
-	page += '<ul class="nav nav-pills nav-stacked" id="submenu">';
+	page += '<div class="item-body lazyloadlist" id="item-body" style="padding-right:0px;display:block;overflow:auto;margin-top:0px;-webkit-overflow-scrolling: touch;">';
+	page += '<ul class="nav nav-pills nav-stacked" id="submenu" style="opacity:0">';
 	page += '<li id="de" style="text-overflow: ellipsis;overflow: hidden;word-break: break-word;white-space: nowrap;"><a style="line-height: 50px;margin-top:0px;" data-url="http://www.hannover.de/Veranstaltungskalender/Ausstellungen"><i style="display: inline-block;float:right;color:#DDDDDD;line-height:75px;margin-right: 5px;font-size: 2em;" id="backbtn" class="badge-chevron fa fa-angle-right"></i>';
 	page += '<img src="img/Atelier_alias_300x225px.jpg"  id="imgde" alt="Ausstellungen" class="media-object img-responsive" style="height: 50px; display: inline-block;margin-right:20px;"/>';
 	page += '<h4 class="happ-blue h-inline">Ausstellungen</h4></a></li>';
@@ -2242,8 +2243,11 @@ function renderPageTypeVeranstaltung(item, stype) {
 	page += '<img src="img/Info-Boerse-Jobcenter-Region_alias_300x225px.jpg"  class="media-object img-responsive" id="imgen" alt="Wissenschaft & Wirtschaft" style="height: 50px; display: inline-block;margin-right:20px;"/>';
 	page += '<h4 class="happ-blue h-inline">Wissenschaft & Wirtschaft</h4></a></li>';
 	page += '</ul>';
+	page += '</div>';
 	$("#main-content").css("opacity", "1").css("transition", "opacity 0.5s");
-	$("#main-content").html(page);	
+	$("#main-content").html(page);
+	$("#item-body").css('height', window.innerHeight - 45);	
+	$("#submenu").css("opacity","1").css("transition","opacity 0.1s");
 	$("ul#submenu li a").click(
 					function(event) {
 									var ref = window.open(encodeURI($(this).attr('data-url')),
