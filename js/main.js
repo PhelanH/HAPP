@@ -1408,7 +1408,7 @@ function renderPageTypeOne(item, stype, parentid) {
 																							.attr(
 																									'href')),
 																					'_blank',
-																					'location=no,zoom=no');
+																					'location=yes,zoom=no,closebuttoncaption=X');
 																	ref.show();
 																});
 
@@ -1605,7 +1605,7 @@ function renderPageTypeOne(item, stype, parentid) {
 																							.attr(
 																									'href')),
 																					'_blank',
-																					'location=no,zoom=no');
+																					'location=yes,zoom=no,closebuttoncaption=X');
 																	ref.show();
 																});
 												/*
@@ -1893,7 +1893,7 @@ function renderMap(item, stype) {
 						function(event) {
 							event.preventDefault();
 							var ref = window.open(encodeURI($(this)
-									.attr('href')), '_blank', 'location=no,zoom=no');
+									.attr('href')), '_blank', 'location=yes,zoom=no,closebuttoncaption=X');
 							ref.show();
 						});
 				break;
@@ -1968,7 +1968,7 @@ function renderMap(item, stype) {
 																					.attr(
 																							'href')),
 																			'_blank',
-																			'location=no,zoom=no');
+																			'location=yes,zoom=no,closebuttoncaption=X');
 															ref.show();
 														});
 										break;
@@ -2025,7 +2025,7 @@ function renderMap(item, stype) {
 			function(event) {
 				event.preventDefault();
 				var ref = window.open(encodeURI($(this).attr('href')),
-						'_blank', 'location=no,zoom=no');
+						'_blank', 'location=yes,zoom=no,closebuttoncaption=X');
 				ref.show();
 			});
 
@@ -2247,7 +2247,7 @@ function renderPageTypeVeranstaltung(item, stype) {
 	$("ul#submenu li a").click(
 					function(event) {
 									var ref = window.open(encodeURI($(this).attr('data-url')),
-						'_blank', 'location=no,zoom=no');
+						'_blank', 'location=yes,zoom=no,closebuttoncaption=X');
 				ref.show();	
 					});
 	}
@@ -2415,7 +2415,7 @@ function renderPageTypeHotel(item, stype) {
 																							.attr(
 																									'href')),
 																					'_blank',
-																					'location=no,zoom=no',
+																					'location=yes,zoom=no,closebuttoncaption=X',
 																					'closebuttoncaption=X');
 																	ref.show();
 																});
@@ -2582,7 +2582,7 @@ function renderPageTypeHotelDetail(item, stype) {
 			function(event) {
 				event.preventDefault();
 				var ref = window.open(encodeURI($(this).attr('href')),
-						'_blank', 'location=no,zoom=no');
+						'_blank', 'location=yes,zoom=no,closebuttoncaption=X');
 				ref.show();
 			});
 }
