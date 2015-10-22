@@ -83,7 +83,7 @@ function getGeoLocations() {
 																	+ "/"
 																	+ results.rows
 																			.item(i).street
-																	+ "?format=json&addressdetails=1&countrycodes=de&limit=1",
+																	+ "?key=2gVx04GoXHj1IxDpYoawozAWr4M5n46E&format=json&addressdetails=1&countrycodes=de&limit=1",
 															success : function(
 																	data, i) {
 																var geoid = this.invokedata;
