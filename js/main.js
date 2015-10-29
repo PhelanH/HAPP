@@ -1856,7 +1856,7 @@ function renderMap(item, stype) {
 	page += '</div>';
 	$url = "http://open.mapquestapi.com/nominatim/v1/search/de/" + item.city
 			+ "/" + item.zip + "/" + item.street
-			+ "?format=json&addressdetails=1&countrycodes=de&limit=1";
+			+ "?key=2gVx04GoXHj1IxDpYoawozAWr4M5n46E&format=json&addressdetails=1&countrycodes=de&limit=1";
 
 	$("#main-content").html(page);
 	if ((addcomplete == '') || (addcomplete == 0) || (addcomplete == undefined)) {
