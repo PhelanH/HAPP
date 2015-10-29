@@ -1407,7 +1407,7 @@ function renderPageTypeOne(item, stype, parentid) {
 																							this)
 																							.attr(
 																									'href')),
-																					'_self',
+																					'_blank',
 																					'location=yes,zoom=no,closebuttoncaption=X');
 																	ref.show();
 																});
@@ -1604,7 +1604,7 @@ function renderPageTypeOne(item, stype, parentid) {
 																							this)
 																							.attr(
 																									'href')),
-																					'_self',
+																					'_blank',
 																					'location=yes,zoom=no,closebuttoncaption=X');
 																	ref.show();
 																});
@@ -1893,7 +1893,7 @@ function renderMap(item, stype) {
 						function(event) {
 							event.preventDefault();
 							var ref = window.open(encodeURI($(this)
-									.attr('href')), '_self', 'location=yes,zoom=no,closebuttoncaption=X');
+									.attr('href')), '_blank', 'location=yes,zoom=no,closebuttoncaption=X');
 							ref.show();
 						});
 				break;
@@ -1967,7 +1967,7 @@ function renderMap(item, stype) {
 																					this)
 																					.attr(
 																							'href')),
-																			'_self',
+																			'_blank',
 																			'location=yes,zoom=no,closebuttoncaption=X');
 															ref.show();
 														});
@@ -2025,7 +2025,7 @@ function renderMap(item, stype) {
 			function(event) {
 				event.preventDefault();
 				var ref = window.open(encodeURI($(this).attr('href')),
-						'_self', 'location=yes,zoom=no,closebuttoncaption=X');
+						'_blank', 'location=yes,zoom=no,closebuttoncaption=X');
 				ref.show();
 			});
 
@@ -2240,8 +2240,8 @@ function renderPageTypeVeranstaltung(item, stype) {
 	page += '<img src="img/Andreasen-und-Bittencourt_alias_300x225px.jpg"  class="media-object img-responsive" id="imgen" alt="Sport" style="height: 50px; display: inline-block;margin-right:20px;"/>';
 	page += '<h4 class="happ-blue h-inline">Sport</h4></a></li>';	
 	page += '<li id="en" style="text-overflow: ellipsis;overflow: hidden;word-break: break-word;white-space: nowrap;"><a style="line-height: 50px;margin-top:0px;" data-url="http://www.hannover.de/Veranstaltungskalender/Wissenschaft-Wirtschaft"><i style="display: inline-block;float:right;color:#DDDDDD;line-height:75px;margin-right: 5px;font-size: 2em;" id="backbtn" class="badge-chevron fa fa-angle-right"></i>';
-	page += '<img src="img/Info-Boerse-Jobcenter-Region_alias_300x225px.jpg"  class="media-object img-responsive" id="imgen" alt="Wissenschaft & Wirtschaft" style="height: 50px; display: inline-block;margin-right:20px;"/>';
-	page += '<h4 class="happ-blue h-inline">Wissenschaft & Wirtschaft</h4></a></li>';
+	page += '<img src="img/Info-Boerse-Jobcenter-Region_alias_300x225px.jpg"  class="media-object img-responsive" id="imgen" alt="Wirtschaft" style="height: 50px; display: inline-block;margin-right:20px;"/>';
+	page += '<h4 class="happ-blue h-inline">Wirtschaft</h4></a></li>';
 	page += '</ul>';
 	page += '</div>';
 	$("#main-content").css("opacity", "1").css("transition", "opacity 0.5s");
@@ -2418,7 +2418,7 @@ function renderPageTypeHotel(item, stype) {
 																							this)
 																							.attr(
 																									'href')),
-																					'_self',
+																					'_blank',
 																					'location=yes,zoom=no,closebuttoncaption=X',
 																					'closebuttoncaption=X');
 																	ref.show();
@@ -2586,7 +2586,7 @@ function renderPageTypeHotelDetail(item, stype) {
 			function(event) {
 				event.preventDefault();
 				var ref = window.open(encodeURI($(this).attr('href')),
-						'_self', 'location=yes,zoom=no,closebuttoncaption=X');
+						'_blank', 'location=yes,zoom=no,closebuttoncaption=X');
 				ref.show();
 			});
 }
