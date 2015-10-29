@@ -2407,7 +2407,16 @@ function renderPageTypeHotel(item, stype) {
 									}
 									page += '</div></div>';
 									$("#zimmer").html(page);
-																					$("#btnwww")
+																					$("#mapbtn")
+														.click(
+																function(event) {
+																	event
+																			.preventDefault();
+																	renderMap(
+																			item,
+																			stype);
+																});
+									$("#btnwww")
 														.click(
 																function(event) {
 																	event
