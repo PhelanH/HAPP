@@ -2251,7 +2251,7 @@ function renderPageTypeVeranstaltung(item, stype) {
 	$("ul#submenu li a").click(
 					function(event) {
 									var ref = window.open(encodeURI($(this).attr('data-url')),
-						'_self', 'location=yes,zoom=no,closebuttoncaption=X');
+						'_blank', 'location=yes,zoom=no,closebuttoncaption=X');
 				ref.show();	
 					});
 	}
